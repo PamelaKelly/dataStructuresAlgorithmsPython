@@ -1,7 +1,5 @@
 class LinearSearch:
-    
-    def __init__(self):
-        pass
+    """ Class for implementing a Linear Search """
     
     @staticmethod
     def search(lst, element):
