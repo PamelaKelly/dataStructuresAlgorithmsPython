@@ -19,11 +19,14 @@ class BinarySearch:
                 # we found it at midpoint
                 return True
             else:
+                # we didn't find the element
                 return False
         else:
             if element < lst[midpoint]:
+                # search the first half of the array
                 return BinarySearch.binary_search(lst[:midpoint], element)
             else:
+                # search the second half of the array
                 return BinarySearch.binary_search(lst[midpoint:], element)
         
 my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
