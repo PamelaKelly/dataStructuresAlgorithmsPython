@@ -14,12 +14,8 @@ class MergeSort:
         if n < 2:
             return lst
         else:
-            if n %2 == 0:
-                left_list = lst[:n//2]
-                right_list = lst[n//2:]
-            else:
-                left_list = lst[:n//2]
-                right_list = lst[n//2:]
+            left_list = lst[:n//2]
+            right_list = lst[n//2:]
             left = MergeSort.merge_sort(left_list) 
             right = MergeSort.merge_sort(right_list)
             return MergeSort.merge(left, right)
